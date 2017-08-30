@@ -1,0 +1,23 @@
+{
+  "name": "ss-messsage",
+  "version": "1.0.0",
+  "description": "A Vue message component",
+  "main": "src/message.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssfe-team/ss-messsage.git"
+  },
+  "keywords": [
+    "message",
+    "Vue"
+  ],
+  "author": "Chuanfeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssfe-team/ss-messsage/issues"
+  },
+  "homepage": "https://github.com/ssfe-team/ss-messsage#readme"
+}
