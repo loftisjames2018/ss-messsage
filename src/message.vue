@@ -56,7 +56,7 @@
     background-color: #fff;
     //border-radius: 4px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .08);
-    z-index: 99999;
+    z-index: 100010;
 
     .message-icon {
       display: inline-block;
