@@ -19,17 +19,17 @@
       }
     },
     computed: {
-        ...mapGetters({
-          messageShow: 'getMessageShow',
-          placeHolder: 'getPlaceHolder',
-          hideTime: 'getHideTime',
-          kind: 'getKind'
-        }),
+      ...mapGetters({
+        messageShow: 'getMessageShow',
+        placeHolder: 'getPlaceHolder',
+        hideTime: 'getHideTime',
+        kind: 'getKind'
+      }),
       messageIconClass() {
         return {
-          'message-icon-success': this.kind === 'success',
-          'message-icon-warning': this.kind === 'warning',
-          'message-icon-error': this.kind === 'error'
+          'message-icon--success': this.kind === 'success',
+          'message-icon--warning': this.kind === 'warning',
+          'message-icon--error': this.kind === 'error'
         }
       }
     },
@@ -52,37 +52,34 @@
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
-    height: 40px;
     background-color: #fff;
-    //border-radius: 4px;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
     z-index: 100010;
+    border-radius: 4px;
 
     .message-icon {
-      display: inline-block;
+      float: left;
       width: 16px;
       height: 16px;
-      margin: 12px 16px 12px 24px;
-      float: left;
+      margin: 10px 16px 10px 24px;
       background-image: url(./img/message_icon.svg);
     }
 
-    .message-icon-success {
+    .message-icon--success {
       background-position: 0px -16px;
     }
-    .message-icon-error {
+    .message-icon--error {
       background-position: -16px -16px;
     }
-    .message-icon-warning {
+    .message-icon--warning {
       background-position: -32px -16px;
     }
 
     .message-text {
-      display: inline-block;
       float: left;
       font-size: 14px;
-      color: #4A4A4A;
-      margin: 13px 24px 13px 0;
+      color: #626262;
+      margin: 10px 24px 10px 0;
     }
 
   }
